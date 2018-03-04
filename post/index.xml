@@ -19,7 +19,7 @@
       <guid>https://wangyuehong.github.io/post/20180304_create_blog_by_hugo/</guid>
       <description>&lt;h2 id=&#34;安装hugo&#34;&gt;安装Hugo&lt;/h2&gt;
 
-&lt;p&gt;老王在mac下使用&lt;code&gt;homebrew&lt;/code&gt;，linux下使用&lt;code&gt;linuxbrew&lt;/code&gt;，用如下命令安装&lt;code&gt;hugo&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;用&lt;code&gt;brew&lt;/code&gt;命令安装&lt;code&gt;hugo&lt;/code&gt;。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ brew install hugo
 &lt;/code&gt;&lt;/pre&gt;
