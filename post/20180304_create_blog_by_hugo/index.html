@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>使用Hugo和GitHub Pages搭建个人博客 - 老王备忘录</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="wangyuehong" />
+  <meta name="description" content="安装Hugo 老王在mac下使用homebrew，linux下使用linuxbrew，用如下命令安装hugo。
+$ brew install hugo  
+" />
+
+  <meta name="keywords" content="老王, 备忘录, 技术博客" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.37" />
+
+
+<link rel="canonical" href="https://wangyuehong.github.io/post/20180304_create_blog_by_hugo/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.0.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="使用Hugo和GitHub Pages搭建个人博客" />
+<meta property="og:description" content="安装Hugo
+
+老王在mac下使用homebrew，linux下使用linuxbrew，用如下命令安装hugo。
+
+$ brew install hugo
+
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wangyuehong.github.io/post/20180304_create_blog_by_hugo/" />
+
+
+
+<meta property="article:published_time" content="2018-03-02T08:39:27&#43;09:00"/>
+
+<meta property="article:modified_time" content="2018-03-02T08:39:27&#43;09:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="使用Hugo和GitHub Pages搭建个人博客">
+<meta itemprop="description" content="安装Hugo
+
+老王在mac下使用homebrew，linux下使用linuxbrew，用如下命令安装hugo。
+
+$ brew install hugo
+
+
+">
+
+
+<meta itemprop="datePublished" content="2018-03-02T08:39:27&#43;09:00" />
+<meta itemprop="dateModified" content="2018-03-02T08:39:27&#43;09:00" />
+<meta itemprop="wordCount" content="833">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用Hugo和GitHub Pages搭建个人博客"/>
+<meta name="twitter:description" content="安装Hugo
+
+老王在mac下使用homebrew，linux下使用linuxbrew，用如下命令安装hugo。
+
+$ brew install hugo
+
+
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Wangyuehong</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Wangyuehong</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">使用Hugo和GitHub Pages搭建个人博客</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-03-02 </span>
+        
+        <span class="more-meta"> 约 833 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#安装hugo">安装Hugo</a></li>
+<li><a href="#创建站点">创建站点</a></li>
+<li><a href="#安装主题">安装主题</a></li>
+<li><a href="#创建文章">创建文章</a></li>
+<li><a href="#部署到github-pages">部署到GitHub Pages</a></li>
+<li><a href="#最后">最后</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h2 id="安装hugo">安装Hugo</h2>
+
+<p>老王在mac下使用<code>homebrew</code>，linux下使用<code>linuxbrew</code>，用如下命令安装<code>hugo</code>。</p>
+
+<pre><code class="language-bash">$ brew install hugo
+</code></pre>
+
+<p></p>
+
+<h2 id="创建站点">创建站点</h2>
+
+<p>使用如下在当前目录下创建新的站点框架。</p>
+
+<pre><code class="language-bash">$ hugo new site blog
+$ tree blog
+$ tree blog
+blog
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+
+6 directories, 2 files
+</code></pre>
+
+<p>使用<code>git</code>管理blog代码。</p>
+
+<pre><code class="language-bash">$ cd blog
+$ git init
+$ git add .
+$ git commit -m 'init commit'
+</code></pre>
+
+<h2 id="安装主题">安装主题</h2>
+
+<p>在 <a href="https://themes.gohugo.io/">Hugo Themes</a>里选择主题，在此以主题<a href="https://themes.gohugo.io/hugo-theme-even/">Even</a>为例，使用<code>submodule</code>的方式安装到<code>blog/themes</code>文件夹下。</p>
+
+<pre><code class="language-bash">$ git submodule add https://github.com/olOwOlo/hugo-theme-even.git themes/even
+$ git add .
+$ git commit -m 'add themes/even as submodule'
+</code></pre>
+
+<p>根据主题文档说明，编辑<code>config.toml</code>文件配置主题。</p>
+
+<pre><code class="language-bash">$ vi config.toml
+$ git add .
+$ git commit -m 'config for even theme'
+</code></pre>
+
+<h2 id="创建文章">创建文章</h2>
+
+<p>使用<code>hugo new post/first.md</code>命令，会生成<code>content/post/first.md</code>文件，其初始内容如下。</p>
+
+<pre><code class="language-markdown">---
+title: &quot;First&quot;
+date: 2018-03-02T08:39:27+09:00
+draft: true
+---
+
+</code></pre>
+
+<p>在两段<code>---</code>之间的内容被称为<a href="https://gohugo.io/content-management/front-matter/">Front Matter</a>，用它作为元数据来控制每篇文章，例如文章的标题<code>title</code>，是否为草稿<code>draft</code>，标签<code>tags</code>，分类<code>categories</code>等。</p>
+
+<p>文章内容以markdown格式写在<code>front matter</code>之后，例如</p>
+
+<pre><code class="language-markdown">---
+title: &quot;第一篇博客&quot;
+date: 2018-03-02T08:39:27+09:00
+draft: true
+---
+用hugo生成的第一篇博客。
+</code></pre>
+
+<p>使用<code>hugo server</code>命令启动本地服务来预览博客内容。</p>
+
+<pre><code class="language-bash">$ hugo server --buildDrafts
+</code></pre>
+
+<p>打开浏览器，访问<code>http://localhost:1313</code>预览文章内容，确认无误后，编辑文章<code>front matter</code>，设置<code>draft: true</code>。</p>
+
+<h2 id="部署到github-pages">部署到GitHub Pages</h2>
+
+<p>配置好<a href="https://pages.github.com/">GitHub Pages</a>的repo后，将其作为submodule加到<code>public</code>文件夹下。<code>public</code>也是hugo生成所有博客静态文件所在的目录。</p>
+
+<pre><code class="language-bash"> git submodule add git@github.com:wangyuehong/wangyuehong.github.io.git public
+</code></pre>
+
+<p>执行<code>hugo</code>命令，生成静态文件到<code>public</code>目录。</p>
+
+<pre><code>$ hugo
+</code></pre>
+
+<p>将<code>public</code>目录下的内容部署到GitHub Pages。</p>
+
+<pre><code>$ cd public
+$ git add .
+$ git commit -m &quot;rebuild site&quot;
+$ git push origin master
+</code></pre>
+
+<h2 id="最后">最后</h2>
+
+<p>实际效果就是这样，blog的<a href="https://github.com/wangyuehong/blog">repo</a>，GitHub Pages的<a href="https://github.com/wangyuehong/wangyuehong.github.io">repo</a>，实际站点就是现在看到的<a href="https://wangyuehong.github.io/">老王备忘录</a>。</p>
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:wangyuehong@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/wangyuehong" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://github.com/wangyuehong" class="iconfont icon-github" title="github"></a>
+  <a href="https://wangyuehong.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">wangyuehong</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.0.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
